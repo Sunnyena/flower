@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <!-- Font --> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,29 +19,35 @@
 
   <body>
     <div class="container">
+		<div class="openbtn"><img src="img/menu.svg" alt=""/><span></span><span></span></div>
+		<nav id="g-nav">
+		<ul>
+			<li><a href="#mainvisual">Home</a></li>  
+			<li><a href="#information">Info</a></li>  
+			<li><a href="#gallery">Gallery</a></li>  
+			<li><a href="#access">Access</a></li>  
+			<li><a href="#contact">Contact</a></li>  
+		</ul>
+		</nav>
+		
       <main>
         <!-- Mainvisual -->
         <div id="mainvisual">
-          <img src="img/mainvisual1.jpg" alt="" />
-          <img src="img/mainvisual2.jpg" alt="" />
-          <img src="img/mainvisual3.jpg" alt="" />
+          <div class="top_bg">
+			  <h1 class="top_ttl">花ノ刺激展</h1>
+			  <p class="top_date">Start from<span>2023,03,13</span></p>
+			</div>
         </div>
 
-        <!-- SiteTitle -->
-        <h1 class="site-title inview fadein">Hello Flower!<br />FA EXHIBITION 2021</h1>
 
         <!-- Information -->
-        <section id="information" class="inview fadein">
-          <h2 class="section-title">INFORMATION</h2>
-          <p>
-            <span class="info-date-en">2021 JUL 1(THU)-3(SAT)</span>
-            <span class="info-time-en">DAY1 10am-6pm OTHER 10am-5:30pm</span>
-          </p>
-          <p class="info-place">at PARK SIDE HALL</p>
-          <p class="info-date-ja">
-            2021年7月1日(木)ー3日(土)<br />
-            Day1 10時〜18時　その他 10時〜17時30分
-          </p>
+        <section id="information">
+			<div class="info_bg">
+					<div class="bg-bk">
+							<p class="info_txt">蜷川ユナが贈る花の刺激展<br>彼女が求め続けた<br>花の刺激が体感できる</p>
+							<p class="info_date">Start from <span>2023,03,13~2023,05,29</span></p>
+					</div>
+			</div>
         </section>
 
         <!-- Gallery -->
@@ -58,18 +64,19 @@
         </section>
 
         <!-- Access -->
-        <section id="access">
+        <section id="access" class="wrapper">
           <h2 class="section-title">ACCESS</h2>
           <p class="place">PARK SIDE HALL</p>
-          <p class="address">
-            〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL<br />
-            PARK SIDE HALL, 1-1-1 Jiyugaoka, Meguro-ku, Tokyo
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1538.3743961792509!2d139.77163179574393!3d35.716360573978164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c2810545fb5%3A0x989e77105c6ed16!2z44CSMTEwLTAwMDcg5p2x5Lqs6YO95Y-w5p2x5Yy65LiK6YeO5YWs5ZyS77yY4oiS77yT77yW!5e0!3m2!1sja!2sjp!4v1676973387247!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p class="access_txt">
+            Adress: 〒110-0007東京都台東区上野公園8-36
           </p>
-          <p class="contact">
-            Tel: 03-1111-1111<br />
-            E-mail: info@xxxxxxx.jp
+			<p class="access_txt">
+            Open: 9:30～17:30（入館は17:00まで）
           </p>
-          <a class="btn" href="#" target="_blank">GOOGLE MAP</a>
+			<p class="access_txt">
+            Close: 第1・3月曜日（祝日・振替休日の場合は翌日）
+          </p>
         </section>
 
         <!-- Twitter -->
@@ -94,5 +101,8 @@
         </section>
       </main>
     </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/drawer.js"></script>
+	<script type="text/javascript" src="js/smoothScroll.js"></script>
   </body>
 </html>
