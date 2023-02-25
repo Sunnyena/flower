@@ -133,12 +133,14 @@ Gallery
   width: clamp(14.5rem, 6.414rem + 25.967vw, 27.188rem);
   transition: all .3s ease;
 }
+
 #gallery .list li.flower3{
   bottom: 89px;
   right: -38px;
   width: clamp(16rem, 13.37rem + 28.287vw, 36rem);
   transition: all .3s ease;
 }
+
 #gallery .list li.flower4{
   left: -57px;
   bottom: 140px;
@@ -159,6 +161,7 @@ Gallery
     width: clamp(21.25rem, 15.138rem + 26.077vw, 36rem);
     transition: all .3s ease;
 }
+
 #gallery .list li.flower7 {
   right: -77px;
   top: 80px;
